@@ -54,6 +54,7 @@ jobs:
         if: matrix.os == 'windows'
         run: |
           Add-Content -Path $env:GITHUB_PATH -Value "$env:USERPROFILE\.poetry\bin"
+          Add-Content -Path $env:GITHUB_PATH -Value "$env:C:\Users\runneradmin\.local\bin"
           Get-Content -Path $env:GITHUB_PATH
       - name: Configure poetry
         run: |
