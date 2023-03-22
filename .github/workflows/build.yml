@@ -90,7 +90,7 @@ jobs:
         run: poetry install --no-interaction
       - run: |
           source $VENV
-          pytest --version          
+          # pytest --version          
           
           
           
