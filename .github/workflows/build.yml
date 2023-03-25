@@ -108,3 +108,11 @@ jobs:
           name: Enopios-${{ runner.os }}
           path: |
             release.zip
+      - name: Publish artefacts
+        uses: svenstaro/upload-release-action@v2
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: 'release.zip'
+          asset_name: 'release'
+          tag: ${{ github.ref }}
+          overwrite: true
