@@ -6,7 +6,7 @@ st.set_page_config(
 )
 
 st.title("Main Page")
-st.sidebar.success("Select a page above.")
+st.sidebar.success("Select a page above")
 
 if "my_input" not in st.session_state:
     st.session_state["my_input"] = ""
