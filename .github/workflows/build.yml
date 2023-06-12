@@ -92,8 +92,9 @@ jobs:
           source $VENV
           # pytest --version          
           
-          
-          
+      - name: update with new dependences
+        run: |
+          poetry update          
       - name: Export requirements file from lock file
         run: |
           poetry export -f requirements.txt --output requirements.txt
