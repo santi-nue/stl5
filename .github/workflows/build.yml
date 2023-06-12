@@ -59,7 +59,7 @@ jobs:
 
       - name: Configure poetry
         run: |
-          poetry config experimental.new-installer false
+          poetry config installer.modern-installation false
           poetry config virtualenvs.in-project true
           
           
