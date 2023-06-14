@@ -81,6 +81,18 @@ jobs:
           timeout 10s poetry run pip --version || rm -rf .venv
       # Repo specific
 
+
+
+      - name: lock new dependences
+        run: |
+          poetry lock --no-update
+
+
+      - name: update with new dependences
+        run: |
+          poetry update
+
+
       - name: Install dependencies
         run: |
           poetry install --no-interaction --no-root
@@ -92,13 +104,8 @@ jobs:
           source $VENV
           # pytest --version          
           
-      - name: lock new dependences
-        run: |
-          poetry lock --no-update
 
-      - name: update with new dependences
-        run: |
-          poetry update           
+           
           
       - name: Export requirements file from lock file
         run: |
