@@ -59,6 +59,7 @@ jobs:
 
       - name: Configure poetry
         run: |
+          poetry config installer.parallel false       
           poetry config installer.modern-installation false
           poetry config virtualenvs.in-project true
           
