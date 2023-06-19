@@ -18,8 +18,8 @@ jobs:
     defaults:
       run:
         shell: bash
-    runs-on: ${{ matrix.os }}-latest
-    timeout-minutes: 60
+    runs-on: ${{ matrix.os }}-2019
+    timeout-minutes: 120
 
     steps:
       # Preamble which sets up Python, and Poetry as well as setting up cross CI
