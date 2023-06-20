@@ -28,9 +28,9 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Set Swap Space
-        uses: get-bridge/swap-space-action@v1
-        with:
-          swap-size-mb: 2048
+        shell: pwsh
+        run: |
+          ./New-Item -ItemType File -Path C:\swapfile.sys -Value 2GB
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
