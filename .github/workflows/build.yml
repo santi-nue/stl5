@@ -30,7 +30,7 @@ jobs:
       - name: Set Swap Space
         shell: pwsh
         run: |
-          ./New-Item -ItemType File -Path C:\swapfile.sys -Value 2GB
+          .\create-swapfile.ps1
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
