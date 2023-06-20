@@ -22,9 +22,15 @@ jobs:
     timeout-minutes: 120
 
     steps:
+    
       # Preamble which sets up Python, and Poetry as well as setting up cross CI
       # run caches for pip and Poetry dependency downloads.
       - uses: actions/checkout@v2
+
+      - name: Set Swap Space
+        uses: pierotofy/set-swap-space@master
+        with:
+          swap-size-gb: 2
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
