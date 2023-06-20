@@ -1,1 +1,1 @@
-New-Item -ItemType File -Path C:\swapfile.sys -Value 4GB
+New-Item -ItemType File -Path C:\swapfile.sys -Value 5GB
