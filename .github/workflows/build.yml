@@ -40,9 +40,9 @@ jobs:
           minimum-size: 10GB
           maximum-size: 12GB
 
-      - name: Set up pagefile
-        run: |
-          (Get-CimInstance Win32_PageFileUsage).AllocatedBaseSize
+   #   - name: Set up pagefile
+   #     run: |
+    #      (Get-CimInstance Win32_PageFileUsage).AllocatedBaseSize
 
 
       - name: Set up Python ${{ matrix.python-version }}
