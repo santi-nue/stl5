@@ -27,10 +27,23 @@ jobs:
       # run caches for pip and Poetry dependency downloads.
       - uses: actions/checkout@v2
 
-      - name: Set Swap Space
-        shell: pwsh
+     # - name: Set Swap Space
+     #   shell: pwsh
+     #   run: |
+    #      .\create-swapfile.ps1
+
+
+
+      - name: Configure pagefile
+        uses: al-cheb/configure-pagefile-action@v1.2
+        with:
+          minimum-size: 10GB
+          maximum-size: 12GB
+
+      - name: Set up pagefile
         run: |
-          .\create-swapfile.ps1
+          (Get-CimInstance Win32_PageFileUsage).AllocatedBaseSize
+
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
