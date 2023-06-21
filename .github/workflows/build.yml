@@ -10,7 +10,7 @@ on:
 jobs:
   Build:
     strategy:
-      fail-fast: true
+      fail-fast: false
       matrix:
         # os: ["ubuntu", "macos", "windows"]
         os: ["windows"]
@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
-    runs-on: ${{ matrix.os }}-2019
+    runs-on: ${{ matrix.os }}-latest
     timeout-minutes: 120
 
     steps:
