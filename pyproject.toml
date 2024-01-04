@@ -8,6 +8,7 @@ license = "Apache-2.0"
 [tool.poetry.dependencies]
 python = "^3.10"
 streamlit = "*"
+openai = "*"
 torch = {url = "https://mirror.sjtu.edu.cn/pytorch-wheels/cu118/torch-2.0.1+cu118-cp310-cp310-win_amd64.whl"}
 
 [tool.poetry.dev-dependencies]
