@@ -8,7 +8,7 @@ license = "Apache-2.0"
 [tool.poetry.dependencies]
 python = "^3.10"
 streamlit = "*"
-openai = "*"
+openai = "0.28"
 datetime = "*"
 
 
