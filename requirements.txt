@@ -378,3 +378,26 @@ zipp==3.8.1 ; python_version >= "3.10" and python_version < "4.0" \
     --hash=sha256:05b45f1ee8f807d0cc928485ca40a07cb491cf092ff587c0df9cb1fd154848d2 \
     --hash=sha256:47c40d7fe183a6f21403a199b3e4192cca5774656965b0a4988ad2f8feb5f009
 
+absl-py==2.1.0
+blinker==1.8.2
+click==8.1.7
+Flask==3.0.3
+iniconfig==2.0.0
+itsdangerous==2.2.0
+Jinja2==3.1.4
+libcst==1.1.0
+Markdown==3.6
+MarkupSafe==2.1.5
+mesop==0.7.2
+mypy-extensions==1.0.0
+packaging==24.0
+pluggy==1.5.0
+protobuf==5.27.0
+pydantic==1.10.13
+Pygments==2.18.0
+pytest==8.2.2
+PyYAML==6.0.1
+typing-inspect==0.9.0
+typing_extensions==4.12.1
+watchdog==4.0.1
+Werkzeug==3.0.3
